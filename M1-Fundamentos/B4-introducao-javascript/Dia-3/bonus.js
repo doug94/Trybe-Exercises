@@ -1,5 +1,5 @@
 //1 - Faça um programa que, dado um valor n qualquer, seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n.
-const n = 7;
+const n = 9;
 let c = '';
 if (n > 1) {
     for (let i = 0; i < n; i += 1) {
@@ -33,3 +33,13 @@ for (let i = aux.length - 1; i >= 0; i -= 2) {
 }
 
 //5 - Faça uma pirâmide com n asteriscos de base que seja vazia no meio.
+let j = 0;
+for (let i = aux.length - 1; i >= 0; i -= 2) {
+    if (i === aux.length - 1 || i === 0) {
+        console.log(" ".repeat(i / 2) + aux[aux.length - i - 1] + " ".repeat(i / 2));
+        j += 2;
+    } else {
+        console.log(" ".repeat(i / 2) + aux[0] + " ".repeat(j - 1) + aux[0]);
+        j += 2;
+    }
+}
