@@ -43,3 +43,23 @@ for (let i = aux.length - 1; i >= 0; i -= 2) {
         j += 2;
     }
 }
+
+//6 - Faça um programa que diz se um número definido numa variável é primo ou não
+let numero = 639;
+let maiorPrimo;
+for (let index = 2; index <= numero; index += 1) {
+    let divisiveis = 0;
+    for (let secondIndex = 1; secondIndex <= index; secondIndex += 1) {
+        if(index % secondIndex === 0) {
+            divisiveis += 1;
+        }
+    }
+    if (divisiveis === 2) {
+        maiorPrimo = index;
+    }
+}
+if (numero === maiorPrimo) {
+    console.log(numero + " é primo");
+} else {
+    console.log(numero + " não é primo");
+}
