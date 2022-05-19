@@ -1,0 +1,12 @@
+const header = document.getElementById("header-container");
+header.style.backgroundColor = "lightgreen";
+const urgente = document.getElementsByClassName("emergency-tasks")[0];
+urgente.style.backgroundColor = "orange";
+const urgenteSubtitulos = document.querySelectorAll(".emergency-tasks h3");
+urgenteSubtitulos[0].style.backgroundColor = "purple";
+urgenteSubtitulos[1].style.backgroundColor = "purple";
+const naoUrgente = document.getElementsByClassName("no-emergency-tasks")[0];
+naoUrgente.style.backgroundColor = "yellow";
+const naoUrgenteSubtitulos = document.querySelectorAll(".no-emergency-tasks h3");
+naoUrgenteSubtitulos[0].style.backgroundColor = "black";
+naoUrgenteSubtitulos[1].style.backgroundColor = "black";
