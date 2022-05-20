@@ -30,6 +30,13 @@
           console.log(elementoAtual.nextSibling);
           console.log(elementoAtual.nextElementSibling);
           console.log(elementoPai.children[2]);
+          const irmaoDeAtual = document.createElement("section");
+          elementoPai.appendChild(irmaoDeAtual);
+          const filhoDeAtual = document.createElement("section");
+          elementoAtual.appendChild(filhoDeAtual);
+          const elementoFilhoDoFilhoDoFilho = document.createElement("section");
+          elementoFilhoDoFilho.appendChild(elementoFilhoDoFilhoDoFilho);
+          console.log(elementoFilhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling);
       </script>
 </body>
 </html>
