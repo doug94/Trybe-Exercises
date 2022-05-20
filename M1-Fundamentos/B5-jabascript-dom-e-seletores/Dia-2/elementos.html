@@ -37,6 +37,12 @@
           const elementoFilhoDoFilhoDoFilho = document.createElement("section");
           elementoFilhoDoFilho.appendChild(elementoFilhoDoFilhoDoFilho);
           console.log(elementoFilhoDoFilhoDoFilho.parentElement.parentElement.nextElementSibling);
+          const elementoPaiDoPai = document.getElementById("paiDoPai");
+          for (let index = 0; index < elementoPaiDoPai.children.length; index += 1) {
+              if (!(elementoPaiDoPai.children[index].innerHTML.includes("pai") || elementoPaiDoPai.children[index].innerHTML.includes("elementoOndeVoceEsta") || elementoPaiDoPai.children[index].innerHTML.includes("primeiroFilhoDoFilho"))) {
+                elementoPaiDoPai.removeChild(elementoPaiDoPai.children[index]);
+              }
+          }
       </script>
 </body>
 </html>
