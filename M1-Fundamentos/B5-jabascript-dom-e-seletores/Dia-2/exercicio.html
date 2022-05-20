@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        const elementoH1 = document.getElementsByTagName("body")[0].appendChild(document.createElement("h1"));
+        elementoH1.innerText = "Exercício 5.2 - JavaScript DOM";
+        const elementoMain = document.getElementsByTagName("body")[0].appendChild(document.createElement("main"));
+        elementoMain.className = "main-content";
+        const elementoSection = elementoMain.appendChild(document.createElement("section"));
+        elementoSection.className = "center-content";
+        const elementoP = elementoSection.appendChild(document.createElement("p"));
+        elementoP.innerText = "Mas como está frio hoje";
+        const elementoSectionLeft = elementoMain.appendChild(document.createElement("section"));
+        elementoSectionLeft.className = "left-content";
+        const elementoSectionRight = elementoMain.appendChild(document.createElement("section"));
+        elementoSectionRight.className = "right-content";
+        const elementoImg = elementoSectionLeft.appendChild(document.createElement("img"));
+        elementoImg.className = "small-image";
+        elementoImg.src = "https://picsum.photos/200";
+        const elementoUl = elementoSectionRight.appendChild(document.createElement("ul"));
+        for (let index = 1; index <= 10; index += 1) {
+            let elementoLi = elementoUl.appendChild(document.createElement("li"));
+            switch (index) {
+                case 1:
+                    elementoLi.innerText = "um";
+                    break;
+                case 2:
+                    elementoLi.innerText = "dois";
+                    break;
+                case 3:
+                    elementoLi.innerText = "três";
+                    break;
+                case 4:
+                    elementoLi.innerText = "quatro";
+                    break;
+                case 5:
+                    elementoLi.innerText = "cinco";
+                    break;
+                case 6:
+                    elementoLi.innerText = "seis";
+                    break;
+                case 7:
+                    elementoLi.innerText = "sete";
+                    break;
+                case 8:
+                    elementoLi.innerText = "oito";
+                    break;
+                case 9:
+                    elementoLi.innerText = "nove";
+                    break;
+                case 10:
+                    elementoLi.innerText = "dez";
+            }
+        }
+        for (let i = 1; i <= 3; i += 1) {
+            elementoMain.appendChild(document.createElement("h3")).innerText = i;
+        }
+    </script>
+  </body>
+</html>
