@@ -59,10 +59,10 @@ function highlightHolidays() {
 
 highlightHolidays();
 
-function createFridayButton(name) {
+function createFridayButton(buttonName) {
     const button = document.createElement("button");
     button.setAttribute('id', 'btn-friday');
-    button.innerText = name;
+    button.innerText = buttonName;
     const buttonsContainer = document.querySelector(".buttons-container");
     buttonsContainer.appendChild(button);
 }
@@ -73,10 +73,10 @@ function changeFridayText(){
     const button = document.getElementById("btn-friday");
     button.addEventListener("click", function() {
         const fridays = document.getElementsByClassName("friday");
-        const fridayDays = [];
+        const fridayDays = ["4", "11", "18", "25"];
         for (let index = 0; index < fridays.length; index += 1) {
-            if (parseInt(fridays[index].innerText) !== NaN) {
-                fridayDays.push(fridays[index].innerText);
+            let value = fridays[index].innerText;
+            if (fridayDays.includes(value)) {
                 fridays[index].innerText = "Sextou";
             } else {
                 fridays[index].innerText = fridayDays[index];
