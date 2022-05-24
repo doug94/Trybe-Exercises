@@ -45,7 +45,6 @@ function buttonHolidays(holiday) {
 buttonHolidays("Feriados");
 
 function highlightHolidays() {
-    const holidays = document.getElementsByClassName("holiday");
     document.getElementById("btn-holiday").addEventListener("click", function() {
         const holidays = document.getElementsByClassName("holiday");
         for (let index = 0; index < holidays.length; index += 1) {
@@ -69,3 +68,21 @@ function createFridayButton(name) {
 }
 
 createFridayButton("Sexta-feira");
+
+function changeFridayText(){
+    const button = document.getElementById("btn-friday");
+    button.addEventListener("click", function() {
+        const fridays = document.getElementsByClassName("friday");
+        const fridayDays = [];
+        for (let index = 0; index < fridays.length; index += 1) {
+            if (parseInt(fridays[index].innerText) !== NaN) {
+                fridayDays.push(fridays[index].innerText);
+                fridays[index].innerText = "Sextou";
+            } else {
+                fridays[index].innerText = fridayDays[index];
+            }
+        }
+    });
+}
+
+changeFridayText();
