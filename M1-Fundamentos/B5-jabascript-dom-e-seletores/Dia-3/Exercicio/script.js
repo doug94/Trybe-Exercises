@@ -56,23 +56,16 @@ function highlightHolidays() {
             }
         }
     });
-    // const bgcolor = holidays[0].style.backgroundColor;
-    // if (bgColor !== "Red") {
-    //     document.getElementById("btn-holiday").addEventListener("click", function () {
-    //         const holidays = document.getElementsByClassName("holiday");
-    //         for (let index = 0; index < holidays.length; index += 1) {
-    //             holidays[index].style.backgroundColor = "Red";
-    //         }
-    //     });
-    // } else {
-    //     document.getElementById("btn-holiday").addEventListener("click", function () {
-    //         const holidays = document.getElementsByClassName("holiday");
-    //         for (let index = 0; index < holidays.length; index += 1) {
-    //             holidays[index].style.backgroundColor = "White";
-    //         }
-    //     });
-    // }
 }
 
 highlightHolidays();
-// holidays[index].style.backgroundColor = "Red";
+
+function createFridayButton(name) {
+    const button = document.createElement("button");
+    button.setAttribute('id', 'btn-friday');
+    button.innerText = name;
+    const buttonsContainer = document.querySelector(".buttons-container");
+    buttonsContainer.appendChild(button);
+}
+
+createFridayButton("Sexta-feira");
