@@ -43,3 +43,26 @@ function buttonHolidays(holiday) {
 }
 
 buttonHolidays("Feriados");
+
+function highlightHolidays() {
+    const holidays = document.getElementsByClassName("holiday");
+    const bgcolor = holidays[0].style.backgroundColor;
+    if (bgColor !== "Red") {
+        document.getElementById("btn-holiday").addEventListener("click", function () {
+            const holidays = document.getElementsByClassName("holiday");
+            for (let index = 0; index < holidays.length; index += 1) {
+                holidays[index].style.backgroundColor = "Red";
+            }
+        });
+    } else {
+        document.getElementById("btn-holiday").addEventListener("click", function () {
+            const holidays = document.getElementsByClassName("holiday");
+            for (let index = 0; index < holidays.length; index += 1) {
+                holidays[index].style.backgroundColor = "White";
+            }
+        });
+    }
+}
+
+highlightHolidays();
+// holidays[index].style.backgroundColor = "Red";
