@@ -86,3 +86,26 @@ function changeFridayText(){
 }
 
 changeFridayText();
+
+function zoomIn(){
+    const days = document.getElementsByClassName("day");
+    for (const day of days) {
+        day.addEventListener("mouseover", function () {
+            day.style.fontSize = "2em";
+        });
+    }
+
+}
+
+function zoomOut(){
+    const days = document.getElementsByClassName("day");
+    for (const day of days) {
+        day.addEventListener("mouseleave", function () {
+            day.style.fontSize = "1.5em";
+        });
+    }
+
+}
+
+zoomIn();
+zoomOut();
