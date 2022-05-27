@@ -110,13 +110,19 @@ function zoomOut(){
 zoomIn();
 zoomOut();
 
-
 document.getElementById("btn-add").addEventListener("click", function () {
     const input = document.getElementById("task-input").value;
     const taskElement = document.createElement("span");
     taskElement.innerHTML = input + "<br>";
     const tasks = document.querySelector(".my-tasks");
-    colorizeTask("Gray", tasks);
+    const tag = colorizeTask("Gray", tasks);
+    tag.addEventListener("click", function () {
+        if (tag.classList.length === 1) {
+            tag.classList.add("selected");
+        } else {
+            tag.classList.remove("selected");
+        }
+    });
     tasks.appendChild(taskElement);
 });
 
@@ -125,4 +131,5 @@ function colorizeTask(cor, tasks) {
     tag.className = "task";
     tag.style.backgroundColor = cor;
     tasks.appendChild(tag);
+    return tag;
 }
