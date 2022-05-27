@@ -115,7 +115,7 @@ document.getElementById("btn-add").addEventListener("click", function () {
     const taskElement = document.createElement("span");
     taskElement.innerHTML = input + "<br>";
     const tasks = document.querySelector(".my-tasks");
-    const tag = colorizeTask("Gray", tasks);
+    const tag = colorizeTask("Navy", tasks);
     tag.addEventListener("click", function () {
         if (tag.classList.length === 1) {
             tag.classList.add("selected");
@@ -133,3 +133,19 @@ function colorizeTask(cor, tasks) {
     tasks.appendChild(tag);
     return tag;
 }
+
+function highlightTaskDay() {
+    const days = document.querySelectorAll(".day");
+    for (let day of days) {
+        day.addEventListener("click", function () {
+            const task = document.querySelector(".selected");
+            if (day.style.color === "rgb(119, 119, 119)" || day.style.color === '') {
+                day.style.color = task.style.backgroundColor;
+            } else {
+                day.style.color = "rgb(119, 119, 119)";
+            }
+        });
+    }
+}
+
+highlightTaskDay();
