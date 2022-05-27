@@ -110,14 +110,15 @@ function zoomOut(){
 zoomIn();
 zoomOut();
 
-function addTask(task) {
+
+document.getElementById("btn-add").addEventListener("click", function () {
+    const input = document.getElementById("task-input").value;
     const taskElement = document.createElement("span");
-    taskElement.innerText = task;
+    taskElement.innerHTML = input + "<br>";
     const tasks = document.querySelector(".my-tasks");
     tasks.appendChild(taskElement);
-}
+});
 
-document.getElementById("btn-add").addEventListener("click", addTask(document.getElementById("task-input").value));
-// document.getElementById("btn-add").addEventListener("click", () => console.log("Passei por aqui"));
+
 
 // addTask("Teste");
