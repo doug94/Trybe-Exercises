@@ -116,9 +116,13 @@ document.getElementById("btn-add").addEventListener("click", function () {
     const taskElement = document.createElement("span");
     taskElement.innerHTML = input + "<br>";
     const tasks = document.querySelector(".my-tasks");
+    colorizeTask("Gray", tasks);
     tasks.appendChild(taskElement);
 });
 
-
-
-// addTask("Teste");
+function colorizeTask(cor, tasks) {
+    const tag = document.createElement("div");
+    tag.className = "task";
+    tag.style.backgroundColor = cor;
+    tasks.appendChild(tag);
+}
