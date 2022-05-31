@@ -1,0 +1,23 @@
+#name-container {
+    line-height: 1.8;
+}
+
+#destination-container {
+    margin-top: 40px;
+    line-height: 0;
+}
+
+#answer-container {
+    margin-top: 40px;
+    width: 350px;
+}
+
+#answer {
+    margin-top: 5px;
+}
+
+#details-container {
+    margin-top: 40px;
+    line-height: 1.6;
+    width: 350px;
+}
