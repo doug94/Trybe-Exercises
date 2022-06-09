@@ -30,19 +30,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-3: JavaScript - Eventos
 - [x] 5-4: JavaScript - Web Storage
 - [x] 5-5: Projeto - Arte com Pixels
-- [ ] 5-6: (Bônus) Projeto - Lista de tarefas
+- [x] 5-6: (Bônus) Projeto - Lista de tarefas
 - [ ] 5-7: (Bônus) Projeto - Meme Generator
 - [x] 5-8: (Bônus) Projeto - Adivinhe a Cor
-- [ ] 5-9: (Bônus) Projeto - Carta Misteriosa
+- [x] 5-9: (Bônus) Projeto - Carta Misteriosa
 ### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 - [x] 6-1: HTML e CSS - Forms
-- [ ] 6-2: Bibliotecas JavaScript e Frameworks CSS
-- [ ] 6-3: CSS Flexbox - Parte 1
-- [ ] 6-4: CSS Flexbox - Parte 2
+- [x] 6-2: Bibliotecas JavaScript e Frameworks CSS
+- [x] 6-3: CSS Flexbox - Parte 1
+- [x] 6-4: CSS Flexbox - Parte 2
 - [ ] 6-5: CSS Responsivo - Mobile First
-- [ ] 6-6: Projeto - Trybewarts
+- [x] 6-6: Projeto - Trybewarts
 ### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
-- [ ] 7-1: JavaScript ES6: let, const, arrow functions e template literals
+- [x] 7-1: JavaScript ES6: let, const, arrow functions e template literals
 - [ ] 7-2: JavaScript ES6 - Fluxo de exceção e Objetos
 - [ ] 7-3: Primeiros passos em Jest
 - [ ] 7-4: Projeto - JavaScript Testes Unitários
