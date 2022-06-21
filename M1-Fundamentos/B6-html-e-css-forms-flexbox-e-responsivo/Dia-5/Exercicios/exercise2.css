@@ -11,6 +11,11 @@ body {
     width: 90%;
 }
 
+.main-content p {
+    text-align: justify;
+    font-size: 1.3em;
+}
+
 @media screen and (min-width: 700px) and (max-width: 899px) {
     body {
         /* margin: 0 10px; */
@@ -20,5 +25,41 @@ body {
     header {
         position: absolute;
         left: 67%;
+    }
+
+    .main-content p {
+        text-align: justify;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        width: 98%
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-left: 0;
+    }
+
+    .aside-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aside-one h2, .aside-two h2, .main-content h1 {
+        text-align: center;
+    }
+    
+    .main-content p {
+        text-align: justify;
+        font-size: 1.1em;
     }
 }
