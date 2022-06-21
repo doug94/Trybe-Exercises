@@ -92,3 +92,42 @@ body {
           padding: 0;
       }
   }
+
+  @media screen and (max-width: 450px) {
+      body {
+          padding: 0;
+      }
+
+      #header {
+          position: fixed;
+          width: 100%;
+          z-index: 1;
+          top: 0;
+      }
+
+      #navigation {
+          position: absolute;
+          top: 80px;
+      }
+
+      #navigation ul {
+          flex-direction: column;
+      }
+
+      #navigation li a {
+          border: 0;
+      }
+
+      #content-container {
+          position: absolute;
+          top: 175px;
+      }
+
+      #content img {
+          width: 90vw;
+      }
+
+      #aside {
+          display: none;
+      }
+  }
