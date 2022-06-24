@@ -84,5 +84,22 @@ function everyoneWasBornOnSecXX() {
     return books.every((item) => item.author.birthYear >= 1901 && item.author.birthYear <= 2000);
   }
 
+function someBookWasReleaseOnThe80s() {
+    return books.some((item) => item.releaseYear >= 1980 && item.releaseYear <= 1989);
+}
+
+function authorUnique() {
+    let birthYears = [];
+    books.forEach((item) => birthYears.push(item.author.birthYear));
+    for (let firstIndex = 0; firstIndex < birthYears.length; firstIndex += 1) {
+        for (secondIndex = firstIndex; secondIndex < birthYears.length; secondIndex += 1) {
+            if (birthYears[firstIndex] === birthYears[secondIndex]) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 // booksOrderedByReleaseYearDesc();
-console.log(everyoneWasBornOnSecXX());
+console.log(authorUnique());
