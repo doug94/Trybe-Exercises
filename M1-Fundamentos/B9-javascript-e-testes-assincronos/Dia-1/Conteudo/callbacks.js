@@ -16,9 +16,6 @@ const getUser = (param) => {
   return param(userToReturn);
 };
 
-// Chamada/execução da função getUser, que vai receber como parâmetro nossa função userFullName.
-const printFullName = () => console.log(getUser(userFullName));
-const printNationality = () => console.log(getUser(userNationality));
 
-setTimeout(printFullName, delay());
-setTimeout(printNationality, delay());
+setTimeout(() => console.log(getUser(userFullName)), delay());
+setTimeout(() => console.log(getUser(userNationality)), delay());
