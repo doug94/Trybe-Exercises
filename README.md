@@ -52,10 +52,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-3: JavaScript ES6 - Higher Order Functions - map  e filter
 - [x] 8-4: JavaScript ES6 - Higher Order Functions - reduce
 - [x] 8-5: JavaScript ES6 - spread operator, parâmetro rest, destructing e mais
-- [ ] 8-6: Projeto - Zoo functions
+- [x] 8-6: Projeto - Zoo functions
 ### Bloco 9: JavaScript e Testes Assíncronos
-- [ ] 9-1: JavaScript Assíncrono e Callbacks
-- [ ] 9-2: JavaScript Assíncrono - Fetch API e async/await
+- [x] 9-1: JavaScript Assíncrono e Callbacks
+- [x] 9-2: JavaScript Assíncrono - Fetch API e async/await
 - [ ] 9-3: Jest - Testes Assíncronos
 - [ ] 9-4: Projeto - Carrinho de Compras
 ## Desenvolvimento Front-end:hourglass_flowing_sand:
