@@ -60,9 +60,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 9-4: Projeto - Carrinho de Compras
 ## Desenvolvimento Front-end:hourglass_flowing_sand:
 ### Bloco 10: Introdução à React
-- [ ] 10-1: React - Introdução a front-end e 'Hello, World!'
-- [ ] 10-2: Componentes React
-- [ ] 10-3: Projeto - Sistema Solar
+- [x] 10-1: React - Introdução a front-end e 'Hello, World!'
+- [x] 10-2: Componentes React
+- [x] 10-3: Projeto - Sistema Solar
 ### Bloco 11: Componentes com estado, Eventos e Formulários React
 - [ ] 11-1: Componentes com estado e eventos
 - [ ] 11-2: Formulários no React
