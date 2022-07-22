@@ -2,12 +2,8 @@ import React from "react";
 
 class Button extends React.Component {
 
-  getNextPokemon() {
-    console.log('Inner call')
-  }
-
   render() {
-    return <button>Próximo Pokemon</button>
+    return <button onClick={this.props.getNextPokemon}>Próximo Pokemon</button>
   }
 }
 

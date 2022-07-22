@@ -28,16 +28,15 @@ class Pokedex extends React.Component {
     ));
   }
 
-  getNextPokemon() {
-    this.setState((prevState, _props) => ({ index: prevState.index += 1}));
-    console.log('outer call');
+  getNextPokemon(event) {
+    console.log(event.target.name)
   }
 
   render() {
     return (
       <div>
         <p>Teste</p>
-        <Button onClick={this.getNextPokemon}/>
+        <Button getNextPokemon={this.getNextPokemon}/>
       </div>
     );
   }
