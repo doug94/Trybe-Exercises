@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getCircleArea = exports.getTrapeziumArea = exports.getDiamondArea = exports.triangleCheck = exports.getPolygonPerimeter = exports.getTriangleArea = exports.getRectangleArea = exports.getSquareArea = void 0;
+const getSquareArea = (side) => side ** 2;
+exports.getSquareArea = getSquareArea;
+const getRectangleArea = (base, height) => base * height;
+exports.getRectangleArea = getRectangleArea;
+const getTriangleArea = (base, height) => (base * height) / 2;
+exports.getTriangleArea = getTriangleArea;
+const getPolygonPerimeter = (sides) => sides.reduce((acc, side) => acc + side, 0);
+exports.getPolygonPerimeter = getPolygonPerimeter;
+const triangleCheck = (sideA, sideB, sideC) => {
+    const checkSideA = (sideB - sideC) < sideA && sideA < (sideB + sideC);
+    const checkSideB = (sideA - sideC) < sideB && sideB < (sideA + sideC);
+    const checkSideC = (sideA - sideB) < sideC && sideC < (sideA + sideB);
+    return checkSideA && checkSideB && checkSideC;
+};
+exports.triangleCheck = triangleCheck;
+const getDiamondArea = (bigger, smaller) => (bigger * smaller) / 2;
+exports.getDiamondArea = getDiamondArea;
+const getTrapeziumArea = (biggerBase, smallerBase, height) => (((biggerBase + smallerBase) * height) / 2);
+exports.getTrapeziumArea = getTrapeziumArea;
+const getCircleArea = (radius) => Math.PI * (radius ** 2);
+exports.getCircleArea = getCircleArea;
